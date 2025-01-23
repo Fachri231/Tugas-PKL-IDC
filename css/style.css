@@ -1,0 +1,64 @@
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+th, td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #f4f4f4;
+}
+.active {
+    background-color: #d4edda;
+    color: #155724;
+}
+.inactive {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.attendance-btn, .add_faces {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.attendance-btn:hover {
+    background-color: #0056b3;
+}
+.message {
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    display: none;
+}
+.message.show {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    .attendance-btn {
+        width: 100%;
+    }
+}
